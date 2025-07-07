@@ -17,4 +17,13 @@ class WorkoutEntry(models.Model):
     def __str__(self):
         return f"{self.date} - {self.workout_type} ({self.intensity})"
 
+# Added Workout model
+class Workout(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
 
