@@ -1,0 +1,49 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.img {
+  border: 5px solid #555;
+}
+
+
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+/* Header styles */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+}
+
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+
