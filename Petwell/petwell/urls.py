@@ -11,5 +11,13 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
-    path('accounts/', include('allauth.urls')),  # ✅ přidáno pro login/logout
+    path('accounts/', include('allauth.urls')),  
+]
+from django.shortcuts import redirect
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('blog/', include('blog.urls')),
+    path('accounts/', include('allauth.urls')),
+    path('', lambda request: redirect('blog_list')),  
 ]
